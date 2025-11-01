@@ -11,7 +11,6 @@
   justify-items: center;
   text-align: center;
   gap: 20px;
-
 }
 
 .container-footer-1 h2 {
@@ -30,17 +29,15 @@
   justify-content: center;
   margin-top: 80px;
   gap: 30px;
-
 }
 
-.card-contacts{
+.card-contacts {
   transition: 0.3s ease;
-
 }
 
-.card-contacts:hover{
+.card-contacts:hover {
   cursor: pointer;
-   transform: translateY(-8px);
+  transform: translateY(-8px);
 }
 
 .card-contacts a {

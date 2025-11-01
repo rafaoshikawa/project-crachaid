@@ -25,13 +25,7 @@
 /* Media query para telas menores */
 @media (max-width: 768px) {
   .container-hero h1 {
-    font-size: 2.5rem; /* reduz tamanho da fonte */
-  }
-}
-
-@media (max-width: 480px) {
-  .container-hero h1 {
-    font-size: 2rem;
+    font-size: 3rem; /* reduz tamanho da fonte */
   }
 }
 

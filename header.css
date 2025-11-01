@@ -23,7 +23,11 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
+
+  /* efeito vidro com compatibilidade total */
   backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px); /* necessário no Safari */
+
   border-bottom: 1px solid rgba(0, 0, 0, 0.2);
   z-index: 100;
 }
