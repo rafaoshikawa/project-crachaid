@@ -17,10 +17,17 @@
   color: #282c34;
   font-size: 3rem;
   max-width: 30ch;
+  @media (max-width: 768px) {
+    font-size: 2rem;
+  }
 }
 
 .container-footer-1 p {
   font-size: 1.2rem;
+
+   @media (max-width: 768px) {
+    font-size: 1rem;
+  }
 }
 
 .container-contacts {
@@ -33,6 +40,7 @@
 
 .card-contacts {
   transition: 0.3s ease;
+  padding: 8px 20px;
 }
 
 .card-contacts:hover {
