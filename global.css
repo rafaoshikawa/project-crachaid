@@ -1,4 +1,7 @@
 /* https://whatsa.me/5511963352624/?t=Ol%C3%A1,%20Gostaria%20de%20fazer%20um%20Or%C3%A7amento! */
+* {
+  overflow-x: hidden;
+}
 
 a,
 ul,
@@ -228,6 +231,6 @@ li {
 
   /* Media query para telas menores */
   @media (max-width: 1300px) {
-    text-align: left;
+    text-align: center;
   }
 }
