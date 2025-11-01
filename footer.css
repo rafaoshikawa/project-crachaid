@@ -1,0 +1,49 @@
+.footer-1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 80px 0 150px 0;
+  width: 100%;
+}
+
+.container-footer-1 {
+  display: grid;
+  justify-items: center;
+  text-align: center;
+  gap: 20px;
+
+}
+
+.container-footer-1 h2 {
+  color: #282c34;
+  font-size: 3rem;
+  max-width: 30ch;
+}
+
+.container-footer-1 p {
+  font-size: 1.2rem;
+}
+
+.container-contacts {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 80px;
+  gap: 30px;
+
+}
+
+.card-contacts{
+  transition: 0.3s ease;
+
+}
+
+.card-contacts:hover{
+  cursor: pointer;
+   transform: translateY(-8px);
+}
+
+.card-contacts a {
+  color: #757c89;
+  padding: 20px;
+}
