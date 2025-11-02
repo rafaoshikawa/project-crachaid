@@ -3,11 +3,14 @@
   position: relative;
 }
 .hero img {
-position: absolute;
-z-index: -9;
-opacity: 0.05;
-object-fit: cover;
-max-width: 1000px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%; /* ocupa toda a largura do hero */
+  height: 100%; /* ocupa toda a altura do hero */
+  z-index: -9;
+  opacity: 0.05;
+  object-fit: cover; /* cobre o container mantendo proporção */
 }
 .blue {
   color: #1173d4;

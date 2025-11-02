@@ -10,35 +10,48 @@
 
 /* --- MOBILE (menor que 768px) --- */
 @media (max-width: 768px) {
-  .card-grid {
-    flex-wrap: nowrap;               /* impede quebra de linha */
-    overflow-x: auto;                /* ativa scroll horizontal */
-    justify-content: flex-start;     /* começa da esquerda */
-    scroll-snap-type: x mandatory;   /* scroll suave (opcional) */
-    -webkit-overflow-scrolling: touch;
-    padding-bottom: 10px;
+  /* Faz o .card-grid ignorar o container */
+  .products.container {
+    padding-left: 0;
+    padding-right: 0;
+    max-width: 100%;
+    overflow-x: hidden; /* evita scroll horizontal global */
   }
 
-  /* Estilo da barra de rolagem horizontal */
+  .card-grid {
+    display: flex;
+    flex-wrap: nowrap; /* impede quebra de linha */
+    overflow-x: auto; /* scroll só nos cards */
+    -webkit-overflow-scrolling: touch;
+    scroll-snap-type: x mandatory; /* scroll suave */
+    gap: 20px; /* gap menor para mobile */
+    margin: 0; /* remove margens que causam overflow */
+    padding: 10px 0 10px 10px; /* respiro interno */
+    width: 100vw; /* ocupa toda a largura da tela */
+    box-sizing: border-box; /* padding incluso na largura */
+    justify-content: flex-start; /* cards começam da esquerda */
+  }
+
+  /* Scrollbar personalizada */
   .card-grid::-webkit-scrollbar {
-    height: 14px; /* aumenta a altura da barra */
+    height: 12px;
   }
 
   .card-grid::-webkit-scrollbar-track {
-    background: rgba(0, 0, 0, 0.05); /* trilho sutil */
-    border-radius: 7px;
+    background: rgba(0, 0, 0, 0.05);
+    border-radius: 6px;
   }
 
   .card-grid::-webkit-scrollbar-thumb {
-    background: rgba(0, 0, 0, 0.3);  /* cor da alça */
-    border-radius: 7px;
-    border: 3px solid transparent;   /* deixa o thumb mais "gordinho" */
+    background: rgba(0, 0, 0, 0.3);
+    border-radius: 6px;
+    border: 2px solid transparent;
     background-clip: content-box;
   }
 
   .card {
-    flex: 0 0 95%;                  /* cada card ocupa 80% da tela */
-    max-width: 300px;               /* limite opcional */
-    scroll-snap-align: start;       /* trava o card no começo ao parar o scroll */
+    flex: 0 0 80%; /* cada card ocupa ~80% da tela */
+    max-width: 300px;
+    scroll-snap-align: start; /* trava card ao parar o scroll */
   }
 }
