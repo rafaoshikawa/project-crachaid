@@ -21,18 +21,19 @@
   .card-grid {
     display: flex;
     flex-wrap: nowrap; /* impede quebra de linha */
-    overflow-x: auto; /* scroll só nos cards */
-    -webkit-overflow-scrolling: touch;
+    overflow-x: scroll; /* scroll horizontal forçado para Safari */
+    -webkit-overflow-scrolling: touch; /* smooth scroll iOS */
     scroll-snap-type: x mandatory; /* scroll suave */
     gap: 20px; /* gap menor para mobile */
     margin: 0; /* remove margens que causam overflow */
     padding: 10px 0 10px 10px; /* respiro interno */
-    width: 100vw; /* ocupa toda a largura da tela */
+    width: 100%; /* ocupa toda largura do container */
+    min-width: 100%; /* evita que encolha no Safari */
     box-sizing: border-box; /* padding incluso na largura */
     justify-content: flex-start; /* cards começam da esquerda */
   }
 
-  /* Scrollbar personalizada */
+  /* Scrollbar personalizada (funciona no Chrome/Android, Safari mostra scroll invisível) */
   .card-grid::-webkit-scrollbar {
     height: 12px;
   }
