@@ -4,98 +4,160 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Cracha.id</title>
-    <link rel="stylesheet" href="global.css" />
-    <link rel="stylesheet" href="header.css" />
-    <link rel="stylesheet" href="hero.css" />
-    <link rel="stylesheet" href="products.css" />
-    <link rel="stylesheet" href="about.css" />
-    <link rel="stylesheet" href="footer.css" />
 
+    <title>Crachá.id | Brindes Personalizados</title>
+
+    <!-- Open Graph (Facebook, WhatsApp, LinkedIn) -->
+    <meta property="og:title" content="Crachá.id | Brindes Personalizados" />
+    <meta
+      property="og:description"
+      content="Credenciais, crachás, pulseiras e copos personalizados para eventos corporativos, conferências e festivais."
+    />
+    <meta
+      property="og:image"
+      content="https://project-crachaid.vercel.app/images/preview.jpg"
+    />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:type" content="image/jpeg" />
+    <meta property="og:url" content="https://project-crachaid.vercel.app" />
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="pt_BR" />
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Crachá.id | Brindes Personalizados" />
+    <meta
+      name="twitter:description"
+      content="Credenciais, crachás, pulseiras e copos personalizados para eventos corporativos, conferências e festivais."
+    />
+    <meta
+      name="twitter:image"
+      content="https://project-crachaid.vercel.app/images/preview.jpg"
+    />
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="images/logo.png" />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="styles/global.css" />
+    <link rel="stylesheet" href="styles/header.css" />
+    <link rel="stylesheet" href="styles/hero.css" />
+    <link rel="stylesheet" href="styles/products.css" />
+    <link rel="stylesheet" href="styles/about.css" />
+    <link rel="stylesheet" href="styles/footer.css" />
+    <!-- Ícones Boxicons -->
     <link
       href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
       rel="stylesheet"
-    />
-
-    <link
-      rel="stylesheet"
-      href="https://unpkg.com/flickity@2/dist/flickity.min.css"
     />
   </head>
 
   <body>
     <header class="header">
-      <a href="#" class="logo">Cracha.id</a>
-
-      <i class="bx bx-menu" id="menu-icon"></i>
-
+      <div class="header-title">
+        <img src="/images/logo.png" alt="Logo Crachá.id" style="width: 50px" />
+        <a href="#" class="logo">Cracha.id</a>
+      </div>
+      <div class="menu-icon">
+        <i class="bx bx-menu" id="menu-icon"></i>
+      </div>
       <nav class="navbar">
         <div class="dropdown">
-          <a href="#">Crachá <i class="bx bx-chevron-down"></i></a>
+          <a href="rotas/cracha.html"
+            >Crachá <i class="bx bx-chevron-down"></i
+          ></a>
           <div class="dropdown-menu">
-            <a href="#">Crachá para identificação</a>
-            <a href="#">Crachá virgem</a>
-            <a href="#">Crachá com tecnologia</a>
-            <a href="#">Comanda em pvc</a>
+            <a href="rotas/cracha.html#identificacao"
+              >Crachá para identificação</a
+            >
+            <a href="rotas/cracha.html#virgem">Crachá virgem</a>
+            <a href="rotas/cracha.html#tecnologia">Crachá com tecnologia</a>
+            <a href="rotas/cracha.html#comanda">Comanda em pvc</a>
           </div>
         </div>
 
         <div class="dropdown">
-          <a href="#">Credencial <i class="bx bx-chevron-down"></i></a>
+          <a href="rotas/credencial.html"
+            >Credencial <i class="bx bx-chevron-down"></i
+          ></a>
           <div class="dropdown-menu">
-            <a href="#">Credencial em pvc para show</a>
-            <a href="#">Credencial em pvc transparente</a>
-            <a href="#">Credencial pvc corporativo</a>
-            <a href="#">Credencial de Papel 220g</a>
-            <a href="#">Credencial em couchê</a>
-            <a href="#">Credencial semissintético</a>
+            <a href="rotas/credencial.html#pvc-show"
+              >Credencial em pvc para show</a
+            >
+            <a href="rotas/credencial.html#pvc-transparente"
+              >Credencial em pvc transparente</a
+            >
+            <a href="rotas/credencial.html#pvc-corporativo"
+              >Credencial pvc corporativo</a
+            >
+            <a href="rotas/credencial.html#papel-220g"
+              >Credencial de Papel 220g</a
+            >
+            <a href="rotas/credencial.html#couche">Credencial em couchê</a>
+            <a href="rotas/credencial.html#semissintetico"
+              >Credencial semissintético</a
+            >
           </div>
         </div>
 
         <div class="dropdown">
-          <a href="#">Pulseiras <i class="bx bx-chevron-down"></i></a>
+          <a href="rotas/pulseiras.html"
+            >Pulseiras <i class="bx bx-chevron-down"></i
+          ></a>
           <div class="dropdown-menu">
-            <a href="#">Pulseira de tecido com tag</a>
-            <a href="#">Pulseira de tecido sem tag</a>
+            <a href="rotas/pulseiras.html#com-tag"
+              >Pulseira de tecido com tag</a
+            >
+            <a href="rotas/pulseiras.html#sem-tag"
+              >Pulseira de tecido sem tag</a
+            >
           </div>
         </div>
 
         <div class="dropdown">
-          <a href="#">Cordões <i class="bx bx-chevron-down"></i></a>
+          <a href="rotas/cordoes.html"
+            >Cordões <i class="bx bx-chevron-down"></i
+          ></a>
           <div class="dropdown-menu">
-            <a href="#">Cordões para crachá</a>
-            <a href="#">Cordões para medalha</a>
-            <a href="#">Cordões para chaveiro</a>
-            <a href="#">Cordão liso</a>
+            <a href="rotas/cordoes.html#para-cracha">Cordões para crachá</a>
+            <a href="rotas/cordoes.html#para-medalha">Cordões para medalha</a>
+            <a href="rotas/cordoes.html#para-chaveiro">Cordões para chaveiro</a>
+            <a href="rotas/cordoes.html#liso">Cordão liso</a>
           </div>
         </div>
 
         <div class="dropdown">
-          <a href="#">Brindes <i class="bx bx-chevron-down"></i></a>
+          <a href="rotas/brindes.html"
+            >Brindes <i class="bx bx-chevron-down"></i
+          ></a>
           <div class="dropdown-menu">
-            <a href="#">Canecas</a>
-            <a href="#">Mouse pad</a>
-            <a href="#">Canetas</a>
-            <a href="#">Copos personalizados</a>
+            <a href="rotas/brindes.html#canecas">Canecas</a>
+            <a href="rotas/brindes.html#mousepad">Mouse pad</a>
+            <a href="rotas/brindes.html#canetas">Canetas</a>
+            <a href="rotas/brindes.html#copos">Copos personalizados</a>
           </div>
         </div>
 
         <div class="btn-1">
           <a
-            href="https://whatsa.me/5511963352624/?t=Ol%C3%A1,%20Gostaria%20de%20fazer%20um%20Or%C3%A7amento!"
+            href="rotas/orcamento.html"
             target="_blank"
             rel="noopener noreferrer"
             class="btn-1"
             style="color: #fff; font-weight: 400"
           >
-            Fazer Orçamento</a
-          >
+            Fazer Orçamento
+          </a>
         </div>
       </nav>
+
+      <div class="nav-bg"></div>
     </header>
 
-    <section class="hero container">
-      <div class="container-hero mg-bottom">
+    <main class="hero">
+      <img src="/images/dot2.png" alt="" />
+      <div class="container-hero mg-bottom container">
         <h1>
           Credenciais Personalizadas <span class="blue">para Eventos</span>
         </h1>
@@ -131,14 +193,14 @@
           <a href="/" class="btn-3">Ver Catálogo</a>
         </div>
       </div>
-      <div class="container-hero">
+      <div class="container-hero container">
         <p class="text-2">Nosso Catálogo<span class="dot">.</span></p>
         <p class="text-1">
           Descubra nossa linha completa de credenciais e produtos personalizados
           para eventos
         </p>
       </div>
-    </section>
+    </main>
 
     <section class="products container">
       <div class="card-grid">
@@ -229,7 +291,7 @@
       </div>
     </section>
 
-    <section class="about">
+    <section class="about bg-color">
       <div class="container-about">
         <div class="container-flex">
           <div class="container-text">

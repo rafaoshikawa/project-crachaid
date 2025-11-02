@@ -13,15 +13,18 @@ menuIcon.addEventListener("click", () => {
 // Mobile: abrir/fechar dropdowns (sanfona)
 dropdowns.forEach((drop) => {
   const link = drop.querySelector("a");
+
   link.addEventListener("click", (e) => {
     if (window.innerWidth <= 768) {
-      e.preventDefault(); // previne abrir link
-      // fecha os outros
-      dropdowns.forEach((d) => {
-        if (d !== drop) d.classList.remove("active");
-      });
-      // abre/fecha atual
-      drop.classList.toggle("active");
+      e.preventDefault(); // previne seguir link
+
+      // Se já está ativo, fecha; senão abre e fecha os outros
+      if (drop.classList.contains("active")) {
+        drop.classList.remove("active");
+      } else {
+        dropdowns.forEach((d) => d.classList.remove("active"));
+        drop.classList.add("active");
+      }
     }
   });
 });
@@ -35,5 +38,16 @@ document.addEventListener("click", (e) => {
       menuIcon.classList.remove("bx-x");
       dropdowns.forEach((d) => d.classList.remove("active"));
     }
+  }
+});
+
+// Ajusta sanfona ao redimensionar tela
+window.addEventListener("resize", () => {
+  if (window.innerWidth > 768) {
+    // garante que tudo fique fechado no desktop
+    navbar.classList.remove("active");
+    navbg.classList.remove("active");
+    menuIcon.classList.remove("bx-x");
+    dropdowns.forEach((d) => d.classList.remove("active"));
   }
 });
