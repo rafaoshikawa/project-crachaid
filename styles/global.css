@@ -29,6 +29,7 @@ li {
   transition: 0.3s ease; /* suaviza transformação */
   color: #fff;
   cursor: pointer;
+  max-width: max-content;
 }
 
 .btn-1:hover {
@@ -111,6 +112,7 @@ li {
   color: #111;
   font-size: 2.2rem;
   text-align: center;
+
   @media (max-width: 768px) {
     font-size: 2rem;
   }
@@ -126,6 +128,22 @@ li {
 .text-4-black {
   color: #111;
   font-size: 2.2rem;
+}
+
+.store-description {
+  color: #2e3137;
+  font-size: 1.2rem;
+  line-height: 2;
+  max-width: 50ch;
+  font-weight: 200;
+
+  /* Media query para telas menores */
+  @media (max-width: 768px) {
+    font-size: 1.5rem; /* reduz tamanho da fonte */
+  }
+  @media (max-width: 480px) {
+    font-size: 1.2rem;
+  }
 }
 
 .mg-bottom {
@@ -247,6 +265,6 @@ li {
   background-color: #e9eff5;
 }
 
-.padding-top{
-  padding-top: 200px;
+.padding-top {
+  padding-top: 100px;
 }
