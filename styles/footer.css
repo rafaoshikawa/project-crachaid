@@ -1,9 +1,10 @@
 .footer-1 {
-  display: flex;
+  display: block;
   justify-content: center;
   align-items: center;
-  padding: 80px 0 150px 0;
+  padding: 80px 0 0px 0;
   width: 100%;
+  background-color: #f8f8f8; /* ajuda a visualizar o footer */
 }
 
 .container-footer-1 {
@@ -17,30 +18,52 @@
   color: #282c34;
   font-size: 3rem;
   max-width: 30ch;
-  @media (max-width: 768px) {
-    font-size: 2rem;
-  }
 }
 
 .container-footer-1 p {
   font-size: 1.2rem;
+}
 
-   @media (max-width: 768px) {
-    font-size: 1rem;
-  }
+.container-btn {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 
 .container-contacts {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  margin-top: 80px;
+  margin-top: 40px;
+  margin-bottom: 60px;
+
   gap: 30px;
 }
 
 .card-contacts {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: 200px;
   transition: 0.3s ease;
-  padding: 8px 20px;
+  padding: 8px 0;
+}
+
+.card-contacts svg {
+  margin-bottom: 10px;
+}
+
+.card-contacts p {
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+
+.card-contacts a {
+  color: #757c89;
+  text-decoration: none;
+  padding: 4px 0;
 }
 
 .card-contacts:hover {
@@ -48,7 +71,28 @@
   transform: translateY(-8px);
 }
 
-.card-contacts a {
+/* Footer bottom section */
+footer + section {
+  border-top: 1px solid rgba(0, 0, 0, 0.2);
   color: #757c89;
-  padding: 20px;
+  font-size: 0.825rem;
+  padding: 20px 0;
+  text-align: center;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .container-contacts {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .container-footer-1 h2 {
+    font-size: 2rem;
+    max-width: max-content;
+  }
+
+  .container-footer-1 p {
+    font-size: 1rem;
+  }
 }

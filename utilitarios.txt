@@ -1,9 +1,9 @@
 
 azul
-#1173d4;
+rgba(17, 115, 212, 1);
 
 laranja
-#f97415;
+rgba(249, 116, 21, 1);
 
 roxo
 #7b68ee

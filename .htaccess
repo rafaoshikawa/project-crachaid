@@ -1,0 +1,9 @@
+# Ativa reescrita de URL
+RewriteEngine On
+
+# Evita conflito com arquivos e pastas reais
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+
+# Redireciona todas as requisições para index.html
+RewriteRule ^.*$ /index.html [L,QSA]
